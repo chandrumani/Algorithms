@@ -44,7 +44,7 @@ const rateLimiter = async (req, res, next) => {
 }
 app.use(rateLimiter);
 
-app.get('/api', async (req, res) => {
+app.get('/api/tokenBucket', async (req, res) => {
     res.send('Request processed successfully');
 });
 
